@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:contain;
+
+
+    background-color: hsla(293, 16%, 49%, 0.479);
+    font-family: "Work Sans";
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    max-width: 300px;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-block: 1rem;
+}
+
+.main__faqs{
+    display: flex;
+    align-items: center;
+}
+.main__faqs img{
+    margin: 1rem;
+    max-width: 30px;
+}
+.main__faqs h1{
+    font-size: 2rem;
+}
+.main__question div{
+    margin-block: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__question h2{
+    font-size: .925rem;
+    padding-inline: 1rem;
+}
+.main__question:hover{
+    cursor: pointer;
+    color: hsl(280, 82%, 55%);
+}
+.answer {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition */
+    
+    padding-inline: 1rem;
+    font-size: .75rem;
+    color: hsl(292, 16%, 49%);
+    
+}
+
+
+.main__question.active .answer {
+    max-height: 200px; /* Large enough to fit content */
+}
+
+
+
+@media screen and (min-width: 576px) {
+    body{
+        background-image: url('../assets/images/background-pattern-desktop.svg');
+    }
+    .main{
+        max-width: 590px;
+    }
+    .main h2{
+        font-size: 1.125rem;
+    }
+    .main__question p{
+        font-size: 1rem;
+    }
+    .main__faqs h1{
+        font-size: 2.5rem;
+    }
+}
