@@ -84,12 +84,16 @@ body{
     }
     .main{
         max-width: 590px;
+        padding-inline-end: 2rem;
     }
     .main__faqs{
         margin-block: 1.5rem;
     }
     .main__question{
         margin-block: 2rem;
+    }
+    .main__question:last-child{
+        margin-block-end: 0;
     }
     .main h2{
         font-size: 1.125rem;
@@ -98,6 +102,6 @@ body{
         font-size: 1rem;
     }
     .main__faqs h1{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 }
