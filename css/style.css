@@ -84,7 +84,7 @@ body{
     }
     .main{
         max-width: 590px;
-        padding-inline-end: 2rem;
+        padding-inline-end: 1.625rem;
     }
     .main__faqs{
         margin-block: 1.5rem;
